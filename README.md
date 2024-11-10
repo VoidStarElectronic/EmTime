@@ -118,7 +118,7 @@ void task1(EmTimer_t* t)
     HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
 }
 
-// task 1 run every 300 ms
+// task 2 run every 300 ms
 void task2(EmTimer_t* t)
 {
     EmTimer__reset(t, 300);
