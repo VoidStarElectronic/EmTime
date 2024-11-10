@@ -19,7 +19,7 @@ EmTick_t EmTick__nowMs()
 void EmTick__sleepMs(EmTick_t d)
 {
 	EmTick_t startTick = EmTick__nowMs();
-    while( ( EmTick__nowMs() - startTick ) < d );
+	while( ( EmTick__nowMs() - startTick ) < d );
 }
 
 #ifdef HTIM_US
@@ -30,7 +30,7 @@ uint16_t EmTick__nowUs()
 void EmTick__sleepUs(EmTick_t d)
 {
 	uint16_t startTick = __EmTick__nowUs();
-    while( (EmTick__nowUs() - startTick ) < d );
+	while( (EmTick__nowUs() - startTick ) < d );
 }
 #endif
 
@@ -63,7 +63,7 @@ void EmTimer__reset(EmTimer_t* self, uint32_t durationMS)
 }
 uint8_t EmTimer__isActive(EmTimer_t* self)
 {
-    return self->active;
+	return self->active;
 }
 void EmTimer__stop(EmTimer_t* self)
 {
@@ -77,8 +77,8 @@ uint8_t EmTimer__eventListener(EmTimer_t* self, void(*eventHandler)(EmTimer_t*))
 		{
 			self->active = 0;
 
-            if( eventHandler != NULL)
-                eventHandler(self);
+			if( eventHandler != NULL)
+				eventHandler(self);
 
 			return 1;
 		}
