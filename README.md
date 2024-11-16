@@ -1,9 +1,9 @@
 # EmTime
  Timer and Stopwatch  
  
-Example 1 :
+### Example 1 :
 * simple stopwatch
-```
+```c
 #include "main.h"
 #include "gpio.h"
 #include "EmTime.h"
@@ -34,10 +34,9 @@ int main(void)
     }
 }
 ```
-
-Example 2 :
+### Example 2 :
 * loop stopwatch
-```
+```c
 #include "main.h"
 #include "gpio.h"
 #include "EmTime.h"
@@ -69,10 +68,9 @@ int main(void)
     }
 }
 ```
-
-Example 3 :
+### Example 3 :
 * simple Timer
-```
+```c
 #include "main.h"
 #include "gpio.h"
 #include "EmTime.h"
@@ -103,9 +101,9 @@ int main(void)
     }
 }
 ```
-Example 3 :
+### Example 3 :
 * Multi task Timer
-```
+```c
 #include "main.h"
 #include "gpio.h"
 #include "EmTime.h"
