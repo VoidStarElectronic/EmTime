@@ -101,7 +101,7 @@ int main(void)
     }
 }
 ```
-### Example 3 :
+### Example 4 :
 * Multi task Timer
 ```c
 #include "main.h"
